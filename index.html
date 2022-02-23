@@ -11,9 +11,9 @@
         
         
         function computerPlay(){
-            const computerOptions = ['rock','paper','scissors'];
-            const choiceNumber = Math.floor(Math.random()*3);
-            const computeropt = computerOptions[choiceNumber];
+            let computerOptions = ['rock','paper','scissors'];
+            let choiceNumber = Math.floor(Math.random()*3);
+            let computeropt = computerOptions[choiceNumber];
             
             return computeropt;
         }
@@ -22,8 +22,8 @@
             let playeropt=a.toLowerCase();
             return playeropt;
         }
-        const computerSelection=computerPlay();
-        const playerSelection=playerPlay();
+        let computerSelection=computerPlay();
+        let playerSelection=playerPlay();
         
 
 
@@ -41,18 +41,19 @@
                 return "You lose! paper beat rock"
             }
             else if(playerSelection==="scisors" && computerSelection==="paper"){
-                return "You won! scissors  beat paper"
+                return "You won! scissors  beat paper";
             }
             else if(playerSelection==="paper" && computerSelection==="scissors"){
-                return "You lose! scissor beat paper"
+                return "You lose! scissor beat paper";
             }
             else{
-                return "neutral no one wins"
+                return "neutral no one wins";
             }
             
         }
+      
         console.log(playRound(computerSelection,playerSelection));
-        
+      
         </script>
 </body>
 </html>
